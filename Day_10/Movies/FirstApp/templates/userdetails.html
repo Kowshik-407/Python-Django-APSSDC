@@ -1,0 +1,20 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Details Page</title>
+</head>
+<body>
+    <center>
+        {% for i in data %}
+        <h1>Full Info about the movie {{ i.moviename }}</h1>
+        <img src="static/images/poster/{{ i.poster }}" alt="RRR" width="350px" height="350px" style="border-radius: 500px;">
+        <h3>Hero Name: {{ i.hero }}</h3>
+        <h3>Heroin Name: {{ i.heroin }}</h3>
+        <h3>Director Name: {{ i.director }}</h3>
+        {% endfor %}
+    </center>
+</body>
+</html>

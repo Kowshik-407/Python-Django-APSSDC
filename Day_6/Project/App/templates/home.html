@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> App </title>
+</head>
+<body style="background-color: white;">
+    <h1 style="background-color: red; color: wheat; text-align: center;"> Welcome to the Django Project. </h1>
+    <br><br><br><hr><hr>
+    <h2 style="font-family: Verdana, Geneva, Tahoma, sans-serif; background-color: dimgrey; color: dodgerblue;"> This is the Duplicate text. </h2>
+    <p style="background-color: blueviolet; color: cornsilk;">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsa praesentium optio rem eius quaerat quibusdam qui, dolore officia id esse laboriosam. Maxime incidunt consectetur itaque blanditiis quae omnis sint vitae?Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum totam, cumque fuga architecto omnis vitae iusto animi suscipit amet ab porro soluta doloribus qui adipisci voluptates rem laudantium iure corporis?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut fuga culpa aliquid vel tempore natus molestias quasi quibusdam dignissimos magni officiis, fugit quod similique possimus ratione voluptatem perferendis incidunt debitis?Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos odio doloremque ex similique reprehenderit quibusdam nihil sequi adipisci beatae mollitia voluptate culpa, natus doloribus voluptas deleniti nesciunt nam earum est.</p>
+    <center><a href="{% url 'index' %}">Redirecting to the Index page.</a></center>
+    <center><a href="{% url 'forms' %}">Redirecting to the Forms page.</a></center>
+    <br><br><br><hr><h><center><h2 style="background-color: hotpink; color: whitesmoke;"> Image Gallery </h2></center><hr><hr>
+    <div style="display: flex;">
+        <img src="/static/images/230.jpg" alt="images" style="padding: 10px; margin: 20px; border: 10px; border: 2px solid red;">
+        <img src="/static/images/231.jpg" alt="images" style="padding: 10px; margin: 20px; border: 10px; border: 2px solid red;">
+        <img src="/static/images/232.jpg" alt="images" style="padding: 10px; margin: 20px; border: 10px; border: 2px solid red;">
+    </div>
+</body>
+</html>

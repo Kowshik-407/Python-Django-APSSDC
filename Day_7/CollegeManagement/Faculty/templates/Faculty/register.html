@@ -1,0 +1,38 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <title> Register Page </title>
+</head> -->
+
+{% extends 'Faculty/mainpage.html' %}
+
+{%  block body %}
+
+<body class="">
+    <marquee style="background-color: khaki; color: maroon;"><h3>Registration Form</h3></marquee>
+    <div class="row">
+        <div class="col-sm-3 bg-dark"></div>
+        <div class="col-sm-6">
+            <form action="{% url 'register' %}" method="POST" style="background-color: mediumaquamarine;">
+                {% csrf_token %}
+                <div>
+                    <label> <b> Name : </b></label><input type="text" name="username" placeholder="Enter Your Name" class="form-control"><br><br>
+                    <label> <b> Age : </b></label> <input type="number" name="age" placeholder="Enter Your Age"  class="form-control"><br><br>
+                    <label> <b>  Email : </b></label><input type="email" name="email" placeholder="Enter Your Email"  class="form-control"><br><br>
+                    <label> <b> Password : </b></label> <input type="password" name="password" placeholder="Enter Password" class="form-control"><br><br>
+                    <center><input type="submit" name="register" class="btn-primary"></center>
+                </div>
+            </form>
+        </div>
+        <div class="col-sm-3 bg-dark"></div>
+    </div>
+</body>
+<!-- </html> -->
+
+{% endblock %}
